@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Face Analyzer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="sctipt/script.js"></script>
+</head>
+
+<body>
+    <main class="main-continer">
+        <div class="left">
+            <div class="pattern">
+                <button class="pattern-video-btn anim" title="Open video file" onclick="getVideo()"></button>
+                <button class="pattern-photos-btn anim" title="Open photos" onclick="getPhotos()"></button>
+                <div class="pattern-video-container">
+                    <img class="pattern-video" src="/" alt="">
+                </div>
+                <div class="pattern-container"></div>
+            </div>
+            <div class="faces">
+                <div class="faces-container">
+                    <div class="face-empty anim" title="Add new face" onclick="getFaces()"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="result">
+                <button class="result-btn anim" title="Start analyzing video" onclick="callAnalyze()"></button>
+                <button class="save-btn anim" title="Save faces" onclick="callSave()"></button>
+                <div class="result-container">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
